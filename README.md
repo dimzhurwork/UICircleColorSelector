@@ -14,4 +14,4 @@ for get selected color use <i>OnColorSelectListener</i>
 with method <i>onColorSelect(color: UIColor)</i>
 for set it use <i>colorSelectListener</i>
 
-<img src='http://www.math-exercises.com/images/math-exercises/exercises/034%20Trigonometric%20functions%2001.png' />
+<img src='https://github.com/dimzhurwork/UICircleColorSelector/blob/master/screen.png?raw=true' />
