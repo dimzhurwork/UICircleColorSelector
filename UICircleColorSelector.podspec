@@ -24,8 +24,7 @@ Pod::Spec.new do |s|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = <<-DESC
-                   DESC
+  s.description  = "Simple circle color selector for IOS writen in SWIFT"
 
   s.homepage     = "https://github.com/dimzhurwork/UICircleColorSelector"
   # s.screenshots  = "https://github.com/dimzhurwork/UICircleColorSelector/raw/master/screen.png?raw=true"
@@ -63,11 +62,11 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  # s.platform     = :ios
-   s.platform     = :ios, "10.0"
+   s.platform     = :ios
+#  s.platform     = :ios, "10.0"
 
   #  When using multiple platforms
-  # s.ios.deployment_target = "5.0"
+   s.ios.deployment_target = "10.0"
   # s.osx.deployment_target = "10.7"
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"
