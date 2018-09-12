@@ -90,7 +90,6 @@ Pod::Spec.new do |s|
   #
 
   s.source_files  = "UICircleColorSelector/*.swift""
-  s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 

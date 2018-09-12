@@ -32,8 +32,8 @@
 		3217F26B21491CB9008F8563 = {
 			isa = PBXGroup;
 			children = (
-				3217F27721491CB9008F8563 /* UICircleColorSelector */,
 				3217F27621491CB9008F8563 /* Products */,
+				3217F27721491CB9008F8563 /* UICircleColorSelector */,
 			);
 			sourceTree = "<group>";
 		};
