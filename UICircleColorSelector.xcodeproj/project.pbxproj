@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		3217F27A21491CB9008F8563 /* UICircleColorSelector.h in Headers */ = {isa = PBXBuildFile; fileRef = 3217F27821491CB9008F8563 /* UICircleColorSelector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3217F28121491CE9008F8563 /* CircleColorSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3217F28021491CE9008F8563 /* CircleColorSelector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3217F27521491CB9008F8563 /* UICircleColorSelector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UICircleColorSelector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3217F27821491CB9008F8563 /* UICircleColorSelector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UICircleColorSelector.h; sourceTree = "<group>"; };
 		3217F27921491CB9008F8563 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3217F28021491CE9008F8563 /* CircleColorSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleColorSelector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				3217F27821491CB9008F8563 /* UICircleColorSelector.h */,
 				3217F27921491CB9008F8563 /* Info.plist */,
+				3217F28021491CE9008F8563 /* CircleColorSelector.swift */,
 			);
 			path = UICircleColorSelector;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					3217F27421491CB9008F8563 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3217F28121491CE9008F8563 /* CircleColorSelector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +264,7 @@
 		3217F27E21491CB9008F8563 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -276,6 +282,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.dimzhur.UICircleColorSelector;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +291,7 @@
 		3217F27F21491CB9008F8563 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
