@@ -4,6 +4,11 @@
 Simple circle color selector
 For use just add CircleColorSelector.swift in your project
 
+or 
+
+pod 'UICircleColorSelector'
+
+
 <i>size</i> - circle and selector width
 <i>colors</i> - array with ints of colors in circle
 
