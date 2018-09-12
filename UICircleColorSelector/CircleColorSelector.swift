@@ -217,7 +217,7 @@ class UICircleColorSelector: UIView{
                                      green: CGFloat(pixel[1])/255.0,
                                      blue: CGFloat(pixel[2])/255.0,
                                      alpha: CGFloat(1))
-        pixel.deallocate(capacity: 4)
+        pixel.deallocate()
         return color
     }
     
