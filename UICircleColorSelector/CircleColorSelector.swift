@@ -61,7 +61,7 @@ private class CircleView: UIView {
     
 }
 
- private class Color {
+private class Color {
     let r: Int
     let g: Int
     let b: Int
@@ -154,7 +154,7 @@ public class UICircleColorSelector: UIView{
         setSelector();
     }
     
-    override var frame: CGRect {
+    override public var frame: CGRect {
         didSet {
             calcCircleRect();
             createCircleRect();
@@ -167,7 +167,7 @@ public class UICircleColorSelector: UIView{
     
     
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder);
         backgroundColor = UIColor.clear;
         calcCircleRect();
@@ -179,7 +179,7 @@ public class UICircleColorSelector: UIView{
     
     
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch = touches.first?.location(in: self);
         let center = CGPoint(x: circleView.frame.origin.x + circleView.frame.width / CGFloat(2),y: circleView.frame.origin.y + circleView.frame.height / CGFloat(2) );
         let r1 = circleView.frame.height / CGFloat(2) + size * 0.5;
@@ -233,7 +233,7 @@ public class UICircleColorSelector: UIView{
     
     
     
-    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override public func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         if(touchBegin){
             let touch = touches.first?.location(in: self);
             let center = CGPoint(x: circleView.frame.origin.x + circleView.frame.width / CGFloat(2),y: circleView.frame.origin.y + circleView.frame.height / CGFloat(2) );
@@ -252,7 +252,7 @@ public class UICircleColorSelector: UIView{
         selecotr.setColor(color: color);
     }
     
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override public  func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         touchBegin = false;
         if colorSelectListener != nil {
             colorSelectListener.onColorSelect(color: selecotr.color);
