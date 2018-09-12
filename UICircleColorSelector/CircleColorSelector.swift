@@ -302,7 +302,6 @@ class UICircleColorSelector: UIView{
         
         let r1 = circleView.frame.height / CGFloat(2);
         let m = calcNearPoint(center: center, point: touch, r1: r1 - size * 0.5  );
-        print("xx=\(xx) yy=\(yy) cos=\(cosA) sin=\(sinA)");
         movie(position: m);
     }
     
