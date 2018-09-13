@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol OnColorSelectListener {
+public protocol OnColorSelectListener {
     func onColorSelect(color: UIColor);
 }
 
