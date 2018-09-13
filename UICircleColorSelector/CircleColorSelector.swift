@@ -339,7 +339,7 @@ public class UICircleColorSelector: UIView{
             let blue1 = Int(b1 * 255);
             
             if(red == green && red == blue){
-                if((red >= red1 - colorStep || red <= red1 + colorStep) && (blue >= blue1 - colorStep || blue <= blue1 + colorStep) && (green >= green1 - colorStep || green <= green1 + colorStep)){
+                if((red >= red1 - colorStep && red <= red1 + colorStep) && (blue >= blue1 - colorStep && blue <= blue1 + colorStep) && (green >= green1 - colorStep && green <= green1 + colorStep)){
                     setColorPos(pos:  cStep * CGFloat(i) + cStep * 0.5);
                     break;
                 }
