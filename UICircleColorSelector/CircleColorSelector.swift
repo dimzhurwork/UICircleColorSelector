@@ -340,7 +340,7 @@ public class UICircleColorSelector: UIView{
             
             if(red == green && red == blue){
                 if(red == red1 && red == green1 && red == blue1){
-                    setColorPos(pos:  cStep * CGFloat(i) * 0.5);
+                    setColorPos(pos:  cStep * CGFloat(i) + cStep * 0.5);
                     break;
                 }
             }else{
