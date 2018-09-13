@@ -107,7 +107,7 @@ public class UICircleColorSelector: UIView{
     
     public var colorSelectListener: OnColorSelectListener!;
     
-    @IBInspectable public var colors: [Int] = [0xff0000, 0xffff00, 0x00ff00, 0x00ffff, 0x0000ff, 0xff00ff,0xffffff,0xff0000] {
+    @IBInspectable public var colors: [Int] = [0xff0000, 0xffff00, 0x00ff00, 0x00ffff, 0x0000ff, 0xff00ff,0xffffff,0xffffff, 0xff0000] {
         didSet{
             calcCircleRect();
             createCircleRect();
@@ -339,7 +339,7 @@ public class UICircleColorSelector: UIView{
             let blue1 = Int(b1 * 255);
             
             if(red == green && red == blue){
-                if(red == red1 && red == green1 && red == blue1){
+                if((red >= red1 - colorStep || red <= red1 + colorStep) && (blue >= blue1 - colorStep || blue <= blue1 + colorStep) && (green >= green1 - colorStep || green <= green1 + colorStep)){
                     setColorPos(pos:  cStep * CGFloat(i) + cStep * 0.5);
                     break;
                 }
