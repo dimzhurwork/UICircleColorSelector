@@ -94,7 +94,7 @@ private class Color {
 @IBDesignable
 public class UICircleColorSelector: UIView{
     
-    @IBInspectable var size: CGFloat = CGFloat(15) {
+    @IBInspectable public var size: CGFloat = CGFloat(15) {
         didSet{
             calcCircleRect();
             createCircleRect();
@@ -105,9 +105,9 @@ public class UICircleColorSelector: UIView{
     
     
     
-    var colorSelectListener: OnColorSelectListener!;
+    public var colorSelectListener: OnColorSelectListener!;
     
-    @IBInspectable var colors: [Int] = [0xff0000, 0xffff00, 0x00ff00, 0x00ffff, 0x0000ff, 0xff00ff,0xffffff,0xff0000] {
+    @IBInspectable public var colors: [Int] = [0xff0000, 0xffff00, 0x00ff00, 0x00ffff, 0x0000ff, 0xff00ff,0xffffff,0xff0000] {
         didSet{
             calcCircleRect();
             createCircleRect();
