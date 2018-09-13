@@ -3,7 +3,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "UICircleColorSelector"
-  s.version      = "1.0.9"
+  s.version      = "1.0.10"
   s.summary      = "Simple circle color selector."
   s.swift_version = "4.1"
   s.description  = "Simple circle color selector for IOS writen in SWIFT"
